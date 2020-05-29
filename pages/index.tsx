@@ -1,15 +1,16 @@
 import Head from 'next/head'
+import { GetStaticProps } from 'next'
+import { getElements, getElement } from '@api/elements'
 
-export default function Home() {
+export default function Home({elements}) {
   return (
     <div className="container">
       <Head>
         <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <p>Blank Nextjs Template</p>
+        <h1>Blank Nextjs Template</h1>
       </main>
     </div>
   )
